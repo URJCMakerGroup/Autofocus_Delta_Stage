@@ -1,1 +1,1 @@
-Carpeta para cada uno de los módulos desarrollados en vhdl
+Directorio para guardar los esquemas de funcionamiento
