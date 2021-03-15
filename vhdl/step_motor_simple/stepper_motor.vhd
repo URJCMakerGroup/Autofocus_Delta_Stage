@@ -4,8 +4,9 @@
 -- Module Name: stepper_motor - Behavioral
 -- Project Name: TFM
 -- Description: 
---        Control simple del motor paso a paso, primera versión unicamente se controla 
---        el sentido de la la dirección.
+--        Control simple del motor paso a paso.
+--        EL sw0 habilita el movimiento del motor.
+--        El sw1 controla el sentido de la la dirección.
 --==============================================================================
 
 library IEEE;
@@ -39,11 +40,6 @@ architecture Behavioral of stepper_motor is
     type estado_motor is ( AB, BC, CD, DA);
     --Señales de los procesos
     signal estado_actual, estado_siguiente: estado_motor;
-    
-    -----------ESTADOS DEL DETECTOR--------------
-    type estado_flanco is (inic, s01, s10, s11);
-    --Señales de los procesos
-    signal estado_f1_act, estado_f1_sig: estado_flanco;
     
     constant sw_on : std_logic := '1'; -- señales activas a nivel alto
     constant sw_off : std_logic := '0';
