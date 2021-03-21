@@ -30,7 +30,7 @@ entity top_stepper_control is
    led_dir: out std_logic;
    
     
-     all_m: in std_logic;
+     en_all_motor: in std_logic;
     motor1: in std_logic;
     motor2: in std_logic;
     motor3: in std_logic;
@@ -59,8 +59,8 @@ architecture Behavioral of top_stepper_control is
    port(
        clk: in std_logic;
        rst: in std_logic; -- sw 15
-     all_m: in std_logic;
-     motor: in std_logic;
+     en_all_motor: in std_logic;
+     en_motor: in std_logic;
        dir: in std_logic; -- sw 1: ON - sentido horario; OFF - sentido antihorario
    endstop: in std_logic;
     
@@ -89,8 +89,8 @@ step_motor_r: stepper_motor
   port map(
     rst => rst,
     clk => clk,
-    motor => motor1,
-    all_m => all_m,
+    en_motor => motor1,
+    en_all_motor => en_all_motor,
     dir => dir,
     endstop => endstop1,
     
@@ -104,8 +104,8 @@ step_motor_l: stepper_motor
   port map(
     rst => rst,
     clk => clk,
-    motor => motor2,
-    all_m => all_m,
+    en_motor => motor2,
+    en_all_motor => en_all_motor,
     dir => dir,
     endstop => endstop2,
     
@@ -119,8 +119,8 @@ step_motor_c: stepper_motor
   port map(
     rst => rst,
     clk => clk,
-    motor => motor3,
-    all_m => all_m,
+    en_motor => motor3,
+    en_all_motor => en_all_motor,
     dir => dir,
     endstop => endstop3,
     
