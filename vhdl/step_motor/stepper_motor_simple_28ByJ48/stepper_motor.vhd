@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Engineer: Carlos Sanchez
 -- Create Date: 16.01.2021 
--- Module Name: stepper_motor - Behavioral
+-- Module Name: stepper_motor
 -- Project Name: TFM
 -- Description: 
 --        Control simple del motor paso a paso.
@@ -18,10 +18,10 @@ entity stepper_motor is
  Port ( 
        clk: in std_logic;
        rst: in std_logic; -- sw 15
-    enable: in std_logic;
+    enable: in std_logic; -- sw 0
       sw_1: in std_logic; -- sw 1: ON - sentido horario; OFF - sentido antihorario
     
-       int: out std_logic_vector(3 downto 0); -- salidas para el motor
+       int: out std_logic_vector(3 downto 0);
        led: out std_logic;
        led1: out std_logic;
        led2: out std_logic
@@ -36,12 +36,11 @@ architecture Behavioral of stepper_motor is
     signal step: std_logic;  
     
     --Defino maquina de estados
-    -----------ESTADOS --------------------------
     type estado_motor is ( AB, BC, CD, DA);
     --Señales de los procesos
     signal estado_actual, estado_siguiente: estado_motor;
     
-    constant sw_on : std_logic := '1'; -- señales activas a nivel alto
+    constant sw_on : std_logic := '1';
     constant sw_off : std_logic := '0';
     
 --==============================================================================
@@ -62,14 +61,14 @@ begin
  end process;
    
  step <= '1' when (cuenta = fin_cuenta-1) else '0'; 
- led <= '1' when enable = '1' else '0';
+ led  <= '1' when enable = '1' else '0';
  led1 <= '1' when sw_1 = '1' else '0';    
  led2 <= '1' when rst = '1' else '0'; 
  
 P_cambio_estado: Process (estado_actual, enable, sw_1, step)
 begin
     case estado_actual is 
-   -------------------s1-------------
+   ----------------------------------
         when AB => 
             if step = '1' and enable = '1' then 
                 
@@ -83,7 +82,7 @@ begin
                 estado_siguiente <= AB;
             end if;
              
-   --------------------s2-------------             
+   -----------------------------------             
            when BC => 
             if step = '1' and enable = '1' then 
                 if sw_1 = '1' then         
@@ -94,7 +93,7 @@ begin
             else
                 estado_siguiente <= BC;
             end if;
-    --------------------s3-------------             
+    -----------------------------------             
           when CD => 
             if step = '1' and enable = '1' then 
                 if sw_1 = '1' then         
@@ -105,7 +104,7 @@ begin
             else
                 estado_siguiente <= CD;
             end if;   
-    --------------------s4-------------             
+    -----------------------------------             
           when DA => 
             if step = '1' and enable = '1' then 
                 if sw_1 = '1' then        
@@ -119,8 +118,7 @@ begin
     end case;
 end process;
 
-----------PROCESO--------------
----Biestable D: proceso secuencia que actualiza el estado cada cilco de reloj y lo guarda en un biesteble.
+
 p_secuencia: Process (rst, clk)
 begin
   if rst='1' then
@@ -131,7 +129,6 @@ begin
 end process;
 
 --------PROCESO COMINACIONAL DE SALIDAS.--------
---proporciaona las salidas 
 P_comb_salidas: Process (estado_actual)
 begin
     int   <= (others=>'0');
