@@ -8,5 +8,4 @@ Se han realizado dos versiones del código en función del driver que se utilice
 ![La imagen no se ha cargado correctamente](https://github.com/sanchezco/TFM_Autofocus_Delta_Stage/blob/main/schemes/Esquema%20conexion%20ULN2003A%20%20.png)
 #### - Driver [L293D]:
 ![La imagen no se ha cargado correctamente](https://github.com/sanchezco/TFM_Autofocus_Delta_Stage/blob/main/schemes/Esquema%20conexion%20L293D.png)
-
-[ULN2003A]:
+![](./pic/pic1_50.png =100x20)
