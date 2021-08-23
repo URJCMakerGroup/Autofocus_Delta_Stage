@@ -1,0 +1,44 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7cf1a83f32fd4f4b984c3162e250055a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_ov7670_behav xil_defaultlib.top_ov7670 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.pkg_fun
+Compiling package xil_defaultlib.ov7670_pkg
+Compiling package xil_defaultlib.gral_pkg
+Compiling package xil_defaultlib.vga_pkg
+Compiling package xil_defaultlib.osc_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioural of entity xil_defaultlib.BRAM [\BRAM(gbitsprofbram=11,gbitsbram...]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_OSCILOS [\CONTROL_OSCILOS(g_sample_freq=5...]
+Compiling architecture behavioral of entity xil_defaultlib.DRAW_OSC [draw_osc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FLANCO [flanco_default]
+Compiling architecture struct of entity xil_defaultlib.top_oscop [\top_oscop(g_sample_freq=5000000...]
+Compiling architecture behav of entity xil_defaultlib.debounce_1pulse [debounce_1pulse_default]
+Compiling architecture behav of entity xil_defaultlib.vga_sync [vga_sync_default]
+Compiling architecture behav of entity xil_defaultlib.vga_display [vga_display_default]
+Compiling architecture behav of entity xil_defaultlib.frame_buffer [frame_buffer_default]
+Compiling architecture behav of entity xil_defaultlib.color_proc [color_proc_default]
+Compiling architecture behav of entity xil_defaultlib.edge_proc [edge_proc_default]
+Compiling architecture behavioral of entity xil_defaultlib.ov7670_capture [ov7670_capture_default]
+Compiling architecture behav of entity xil_defaultlib.sccb_master [sccb_master_default]
+Compiling architecture behav of entity xil_defaultlib.ov7670_ctrl_reg [ov7670_ctrl_reg_default]
+Compiling architecture struct of entity xil_defaultlib.ov7670_top_ctrl [ov7670_top_ctrl_default]
+Compiling architecture behav of entity xil_defaultlib.disp7seg_8dig [disp7seg_8dig_default]
+Compiling architecture behav of entity xil_defaultlib.tx_uart [tx_uart_default]
+Compiling architecture behavioral of entity xil_defaultlib.uart_interfaz [uart_interfaz_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumador [sumador_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparador [comparador_default]
+Compiling architecture behav of entity xil_defaultlib.ram_sum [ram_sum_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sum [top_sum_default]
+Compiling architecture struct of entity xil_defaultlib.top_ov7670
+Built simulation snapshot top_ov7670_behav

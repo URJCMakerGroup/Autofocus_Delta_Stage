@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug 20 00:41:43 2021
+# Process ID: 14556
+# Current directory: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/impl_1
+# Command line: vivado.exe -log top_microscopio.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_microscopio.tcl -notrace
+# Log file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/impl_1/top_microscopio.vdi
+# Journal file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_microscopio.tcl -notrace

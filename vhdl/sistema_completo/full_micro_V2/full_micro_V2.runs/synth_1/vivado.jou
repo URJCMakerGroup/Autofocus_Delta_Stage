@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul 20 23:37:58 2021
+# Process ID: 12360
+# Current directory: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_V2/full_micro_V2.runs/synth_1
+# Command line: vivado.exe -log top_ov7670.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_ov7670.tcl
+# Log file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_V2/full_micro_V2.runs/synth_1/top_ov7670.vds
+# Journal file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_V2/full_micro_V2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_ov7670.tcl -notrace

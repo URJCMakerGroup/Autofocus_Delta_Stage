@@ -1,0 +1,1143 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug 20 00:40:41 2021
+# Process ID: 8060
+# Current directory: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/synth_1
+# Command line: vivado.exe -log top_microscopio.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_microscopio.tcl
+# Log file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/synth_1/top_microscopio.vds
+# Journal file: D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_microscopio.tcl -notrace
+Command: synth_design -top top_microscopio -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5952 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 699.461 ; gain = 176.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_microscopio' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_microscopio.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'top_uart_rx' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_uart_rx.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_rx.vhd:23]
+	Parameter G_FREQ_CLK bound to: 100000000 - type: integer 
+	Parameter G_BAUD bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (1#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_rx.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'proc_serie' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/proc_serie.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'proc_serie' (2#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/proc_serie.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top_uart_rx' (3#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_uart_rx.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'top_uart_tx' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_uart_tx.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'uart_interfaz' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_interfaz.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'uart_interfaz' (4#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_interfaz.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'uart_tx_nopar' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_tx_nopar.vhd:20]
+	Parameter gFrecClk bound to: 100000000 - type: integer 
+	Parameter gBaud bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx_nopar' (5#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/uart_tx_nopar.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'top_uart_tx' (6#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_uart_tx.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top_ov7670' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:84]
+	Parameter g_debug_oscop bound to: 1 - type: integer 
+	Parameter g_debug_7seg bound to: 1 - type: integer 
+	Parameter g_sample_freq bound to: 50000000 - type: integer 
+	Parameter gFrecClk bound to: 100000000 - type: integer 
+	Parameter gBaud bound to: 115200 - type: integer 
+INFO: [Synth 8-3491] module 'debounce_1pulse' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/debounce.vhd:17' bound to instance 'btn_deb1' of component 'debounce_1pulse' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'debounce_1pulse' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/debounce.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'debounce_1pulse' (7#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/debounce.vhd:24]
+INFO: [Synth 8-3491] module 'debounce_1pulse' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/debounce.vhd:17' bound to instance 'btn_deb2' of component 'debounce_1pulse' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:331]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_sync.vhd:15' bound to instance 'I_vga' of component 'vga_sync' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:340]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_sync.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (8#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_sync.vhd:31]
+INFO: [Synth 8-3491] module 'vga_display' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_display.vhd:17' bound to instance 'I_ov_display' of component 'vga_display' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:366]
+INFO: [Synth 8-638] synthesizing module 'vga_display' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_display.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (9#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_display.vhd:36]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/frame_buffer.vhd:18' bound to instance 'I_fb_orig' of component 'frame_buffer' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/frame_buffer.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (10#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/frame_buffer.vhd:29]
+INFO: [Synth 8-3491] module 'color_proc' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/color_proc.vhd:19' bound to instance 'I_color_proc' of component 'color_proc' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:396]
+INFO: [Synth 8-638] synthesizing module 'color_proc' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/color_proc.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'color_proc' (11#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/color_proc.vhd:34]
+INFO: [Synth 8-3491] module 'edge_proc' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/edge_proc.vhd:21' bound to instance 'I_edge_proc' of component 'edge_proc' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:412]
+INFO: [Synth 8-638] synthesizing module 'edge_proc' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/edge_proc.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'edge_proc' (12#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/edge_proc.vhd:36]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/frame_buffer.vhd:18' bound to instance 'I_fb_proc' of component 'frame_buffer' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:449]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_capture.vhd:18' bound to instance 'capture' of component 'ov7670_capture' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:462]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_capture.vhd:38]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'led_test_reg' in module 'ov7670_capture' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_capture.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (13#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_capture.vhd:38]
+INFO: [Synth 8-3491] module 'ov7670_top_ctrl' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd:19' bound to instance 'controller' of component 'ov7670_top_ctrl' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'ov7670_top_ctrl' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd:38]
+INFO: [Synth 8-3491] module 'sccb_master' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/sccb_master.vhd:63' bound to instance 'I_SCCB' of component 'sccb_master' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'sccb_master' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/sccb_master.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'sccb_master' (14#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/sccb_master.vhd:79]
+INFO: [Synth 8-3491] module 'ov7670_ctrl_reg' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_ctrl_reg.vhd:29' bound to instance 'I_REGS' of component 'ov7670_ctrl_reg' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'ov7670_ctrl_reg' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_ctrl_reg.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_ctrl_reg' (15#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_ctrl_reg.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top_ctrl' (16#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd:38]
+	Parameter g_clk_freq bound to: 100000000 - type: integer 
+	Parameter g_sample_freq bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'top_oscop' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:10' bound to instance 'i_osc' of component 'top_oscop' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:513]
+INFO: [Synth 8-638] synthesizing module 'top_oscop' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:32]
+	Parameter g_clk_freq bound to: 100000000 - type: integer 
+	Parameter g_sample_freq bound to: 50000000 - type: integer 
+	Parameter gBitsProfBRAM bound to: 11 - type: integer 
+	Parameter gBitsBRAM bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_bram.vhd:9' bound to instance 'I_LIFO_BRAM' of component 'BRAM' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'BRAM' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_bram.vhd:27]
+	Parameter gBitsProfBRAM bound to: 11 - type: integer 
+	Parameter gBitsBRAM bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (17#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_bram.vhd:27]
+	Parameter g_clk_freq bound to: 100000000 - type: integer 
+	Parameter g_sample_freq bound to: 50000000 - type: integer 
+INFO: [Synth 8-3491] module 'CONTROL_OSCILOS' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_control.vhd:24' bound to instance 'I_CTROL_OSC' of component 'CONTROL_OSCILOS' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'CONTROL_OSCILOS' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_control.vhd:47]
+	Parameter g_clk_freq bound to: 100000000 - type: integer 
+	Parameter g_sample_freq bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CONTROL_OSCILOS' (18#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_control.vhd:47]
+INFO: [Synth 8-3491] module 'DRAW_OSC' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_display.vhd:9' bound to instance 'I_DRAW' of component 'DRAW_OSC' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'DRAW_OSC' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_display.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'DRAW_OSC' (19#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_display.vhd:25]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/vga_sync.vhd:15' bound to instance 'I_VGA_SYNC' of component 'vga_sync' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:190]
+	Parameter g_signal_inactive bound to: 1'b0 
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/flanco_restart.vhd:16' bound to instance 'I_FLANCO' of component 'FLANCO' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'FLANCO' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/flanco_restart.vhd:30]
+	Parameter g_signal_inactive bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FLANCO' (20#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/flanco_restart.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'top_oscop' (21#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_top.vhd:32]
+INFO: [Synth 8-3491] module 'disp7seg_8dig' declared at 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/disp7seg_8dig.vhd:18' bound to instance 'i_7seg' of component 'disp7seg_8dig' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:544]
+INFO: [Synth 8-638] synthesizing module 'disp7seg_8dig' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/disp7seg_8dig.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'disp7seg_8dig' (22#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/disp7seg_8dig.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'top_ov7670' (23#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/top_ov7670.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'top_posicionamiento' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_posicionamiento.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'stepper_motor' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/step_motor.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'stepper_motor' (24#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/step_motor.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'top_posicionamiento' (25#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_posicionamiento.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'top_autoenfoque' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_autoenfoque.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'sumador_pxl' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/sumador_pxl.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'sumador_pxl' (26#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/sumador_pxl.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'ram_result' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/ram_result.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ram_result' (27#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/ram_result.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'comparador_sum' [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/comparador_sum.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'comparador_sum' (28#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/comparador_sum.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'top_autoenfoque' (29#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_autoenfoque.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'top_microscopio' (30#1) [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/top_microscopio.vhd:90]
+WARNING: [Synth 8-3331] design DRAW_OSC has unconnected port FilaPantalla[9]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[11]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[10]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[9]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[8]
+WARNING: [Synth 8-3331] design vga_display has unconnected port hsync
+WARNING: [Synth 8-3331] design vga_display has unconnected port vsync
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[0]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[0]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[11]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[10]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[9]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[8]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[7]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[6]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[5]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[4]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[0]
+WARNING: [Synth 8-3331] design top_uart_rx has unconnected port s_env_af
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 771.711 ; gain = 248.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 771.711 ; gain = 248.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 771.711 ; gain = 248.859
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_microscopio_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_microscopio_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 902.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 902.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'e_act_reg' in module 'uart_rx'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/proc_serie.vhd:534]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/proc_serie.vhd:632]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/new/proc_serie.vhd:708]
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'proc_serie'
+INFO: [Synth 8-5544] ROM "led_estado" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Estado_reg' in module 'uart_tx_nopar'
+INFO: [Synth 8-802] inferred FSM for state register 'pr_sccb_st_reg' in module 'sccb_master'
+INFO: [Synth 8-802] inferred FSM for state register 'pr_ctrl_st_reg' in module 'ov7670_ctrl_reg'
+INFO: [Synth 8-802] inferred FSM for state register 'state_capture_act_reg' in module 'CONTROL_OSCILOS'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.srcs/sources_1/imports/vhd/oscop_display.vhd:47]
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'stepper_motor'
+INFO: [Synth 8-5544] ROM "int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  e_idle |                               00 |                               00
+              e_init_bit |                               01 |                               01
+             e_data_bits |                               10 |                               10
+               e_end_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'e_act_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  inicio |                              001 |                              000
+                 i_manda |                              111 |                              010
+               i_captura |                              110 |                              001
+                    home |                              101 |                              011
+                  ajuste |                              100 |                              100
+             autoenfoque |                              011 |                              101
+                  maximo |                              010 |                              110
+                   final |                              000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'proc_serie'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   einit |                               00 |                               00
+                ebitinit |                               01 |                               01
+               ebitsdato |                               10 |                               10
+                 ebitfin |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Estado_reg' using encoding 'sequential' in module 'uart_tx_nopar'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 idle_st |                              000 |                              000
+             init_seq_st |                              001 |                              001
+            send_byte_st |                              010 |                              010
+                 dntc_st |                              011 |                              011
+              end_seq_st |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pr_sccb_st_reg' using encoding 'sequential' in module 'sccb_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               rstcam_st |                              000 |                              000
+          wait_rstcam_st |                              001 |                              001
+                 wait_st |                              010 |                              010
+                 done_st |                              011 |                              100
+                  iSTATE |                              100 |                              111
+            write_reg_st |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pr_ctrl_st_reg' using encoding 'sequential' in module 'ov7670_ctrl_reg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             e_capturing |                              001 |                               00
+         e_capt_stopping |                              010 |                               01
+          e_capt_stopped |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_capture_act_reg' using encoding 'one-hot' in module 'CONTROL_OSCILOS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      ab |                               00 |                               00
+                      da |                               01 |                               11
+                      cd |                               10 |                               10
+                      bc |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'stepper_motor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 5     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	               25 Bit    Registers := 3     
+	               24 Bit    Registers := 3     
+	               20 Bit    Registers := 3     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 50    
++---RAMs : 
+	             900K Bit         RAMs := 2     
+	              30K Bit         RAMs := 1     
+	               2K Bit         RAMs := 2     
+	              250 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 8     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 8     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 31    
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 20    
+	   8 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 38    
+	   2 Input      1 Bit        Muxes := 74    
+	   4 Input      1 Bit        Muxes := 19    
+	   6 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module proc_serie 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module uart_interfaz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module uart_tx_nopar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce_1pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module vga_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frame_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---RAMs : 
+	             900K Bit         RAMs := 1     
+Module color_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module edge_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module ov7670_capture 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module sccb_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 10    
+Module ov7670_ctrl_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 4     
+Module disp7seg_8dig 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module BRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 2     
++---RAMs : 
+	              30K Bit         RAMs := 1     
+Module CONTROL_OSCILOS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module DRAW_OSC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 20    
+Module FLANCO 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module top_ov7670 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module stepper_motor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+Module sumador_pxl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ram_result 
+Detailed RTL Component Info : 
++---Registers : 
+	               25 Bit    Registers := 1     
++---RAMs : 
+	              250 Bit         RAMs := 1     
+Module comparador_sum 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[11]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[10]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[9]
+WARNING: [Synth 8-3331] design edge_proc has unconnected port orig_pxl[8]
+WARNING: [Synth 8-3331] design vga_display has unconnected port hsync
+WARNING: [Synth 8-3331] design vga_display has unconnected port vsync
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m2[0]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port c_rev_abs_m3[0]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[11]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[10]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[9]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[8]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[7]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[6]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[5]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[4]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[3]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[2]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[1]
+WARNING: [Synth 8-3331] design top_ov7670 has unconnected port pxl_sum_aux[0]
+INFO: [Synth 8-5784] Optimized 0 bits of RAM "m_top_ov7670/g_osc.i_osc/I_LIFO_BRAM/memo_reg" due to constant propagation. Old ram width 15 bits, new ram width 15 bits.
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670/g_osc.i_osc/I_CTROL_OSC/trig_reg_reg' (FDC) to 'm_top_ov7670/capture/href_rg1_reg'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__23' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__24' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__0' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__25' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__1' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__31' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__7' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__27' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__3' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__32' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__8' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__28' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__4' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__33' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__9' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__29' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__5' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670/I_color_proc/proc_we_reg' (FDC) to 'm_top_ov7670/I_edge_proc/receiving_reg'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__34' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__10' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__30' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__26'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__6' (FD) to 'm_top_ov7670i_14/m_top_ov7670/I_fb_orig/ram_reg_mux_sel__2'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__23' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__24' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__0' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__25' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__1' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__26' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__2' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__31' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__7' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__27' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__3' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__32' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__8' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__28' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__4' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__33' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__9' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__29' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__5' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__34' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__10' (FD) to 'm_top_ov7670i_32/m_top_ov7670/I_fb_proc/ram_reg_mux_sel__6'
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__11) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__12) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__13) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__14) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__15) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__16) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__17) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__18) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__19) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__20) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__21) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_orig/ram_reg_mux_sel__22) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__11) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__12) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__13) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__14) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__15) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__16) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__17) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__18) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__19) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__20) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__21) is unused and will be removed from module top_microscopio.
+WARNING: [Synth 8-3332] Sequential element (m_top_ov7670/I_fb_proc/ram_reg_mux_sel__22) is unused and will be removed from module top_microscopio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+---------------------------+---------------+----------------+
+|Module Name     | RTL Object                | Depth x Width | Implemented As | 
++----------------+---------------------------+---------------+----------------+
+|ov7670_ctrl_reg | reg_yuv422_test[0]        | 32x16         | LUT            | 
+|ov7670_ctrl_reg | reg_rgb444_test[0]        | 64x16         | LUT            | 
+|ov7670_ctrl_reg | reg_yuv422[0]             | 32x16         | LUT            | 
+|ov7670_ctrl_reg | reg_rgb444[0]             | 64x16         | LUT            | 
+|ov7670_top_ctrl | I_REGS/reg_yuv422_test[0] | 32x16         | LUT            | 
+|ov7670_top_ctrl | I_REGS/reg_rgb444_test[0] | 64x16         | LUT            | 
+|ov7670_top_ctrl | I_REGS/reg_yuv422[0]      | 32x16         | LUT            | 
+|ov7670_top_ctrl | I_REGS/reg_rgb444[0]      | 64x16         | LUT            | 
++----------------+---------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|frame_buffer: | ram_reg     | 128 K x 12(READ_FIRST) | W |   | 128 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|edge_proc:    | cirbuf2_reg | 512 x 8(READ_FIRST)    | W | R |                         |   |   | Port A           | 1      | 0      | 
+|edge_proc:    | cirbuf1_reg | 512 x 8(READ_FIRST)    | W | R |                         |   |   | Port A           | 1      | 0      | 
+|frame_buffer: | ram_reg     | 128 K x 12(READ_FIRST) | W |   | 128 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|BRAM:         | memo_reg    | 2 K x 15(WRITE_FIRST)  | W | R | 2 K x 15(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++----------------+--------------------------------------+-----------+----------------------+--------------+
+|top_microscopio | m_autoenfoque/ram_resultados/ram_reg | Implied   | 16 x 25              | RAM32M x 5   | 
++----------------+--------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/m_top_ov7670/I_fb_orig/ram_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_18/m_top_ov7670/I_edge_proc/cirbuf2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_19/m_top_ov7670/I_edge_proc/cirbuf1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_32/m_top_ov7670/I_fb_proc/ram_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM m_top_ov7670/g_osc.i_osc/I_LIFO_BRAM/memo_reg to conserve power
+INFO: [Synth 8-6837] The timing for the instance i_67/m_top_ov7670/g_osc.i_osc/I_LIFO_BRAM/memo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 902.309 ; gain = 379.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 963.828 ; gain = 440.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|frame_buffer: | ram_reg     | 128 K x 12(READ_FIRST) | W |   | 128 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|edge_proc:    | cirbuf2_reg | 512 x 8(READ_FIRST)    | W | R |                         |   |   | Port A           | 1      | 0      | 
+|edge_proc:    | cirbuf1_reg | 512 x 8(READ_FIRST)    | W | R |                         |   |   | Port A           | 1      | 0      | 
+|frame_buffer: | ram_reg     | 128 K x 12(READ_FIRST) | W |   | 128 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|BRAM:         | memo_reg    | 2 K x 15(WRITE_FIRST)  | W | R | 2 K x 15(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++--------------+-------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++----------------+--------------------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object                           | Inference | Size (Depth x Width) | Primitives   | 
++----------------+--------------------------------------+-----------+----------------------+--------------+
+|top_microscopio | m_autoenfoque/ram_resultados/ram_reg | Implied   | 16 x 25              | RAM32M x 5   | 
++----------------+--------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_2802' (FDCE) to 'i_2801'
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_orig/ram_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_edge_proc/cirbuf2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_edge_proc/cirbuf1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance m_top_ov7670/I_fb_proc/ram_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_0_114 is driving 44 big block pins (URAM, BRAM and DSP loads). Created 5 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1292 is driving 96 big block pins (URAM, BRAM and DSP loads). Created 10 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1271 is driving 96 big block pins (URAM, BRAM and DSP loads). Created 10 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |   136|
+|3     |LUT1       |    95|
+|4     |LUT2       |   319|
+|5     |LUT3       |   165|
+|6     |LUT4       |   195|
+|7     |LUT5       |   335|
+|8     |LUT6       |   372|
+|9     |MUXF7      |     4|
+|10    |MUXF8      |     1|
+|11    |RAM32M     |     5|
+|12    |RAMB18E1   |     2|
+|13    |RAMB36E1   |    24|
+|14    |RAMB36E1_1 |    24|
+|15    |RAMB36E1_2 |    24|
+|16    |RAMB36E1_3 |     1|
+|17    |FDCE       |   771|
+|18    |FDPE       |    84|
+|19    |FDRE       |    31|
+|20    |IBUF       |    28|
+|21    |OBUF       |    58|
+|22    |OBUFT      |     4|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    |  2679|
+|2     |  m_autoenfoque     |top_autoenfoque     |   226|
+|3     |    comp_resultados |comparador_sum      |    66|
+|4     |    ram_resultados  |ram_result          |    43|
+|5     |    sum             |sumador_pxl         |   117|
+|6     |  m_posicionamiento |top_posicionamiento |   174|
+|7     |    step_motor_1    |stepper_motor       |    58|
+|8     |    step_motor_2    |stepper_motor_3     |    58|
+|9     |    step_motor_3    |stepper_motor_4     |    58|
+|10    |  m_top_ov7670      |top_ov7670          |  1794|
+|11    |    I_color_proc    |color_proc          |    62|
+|12    |    I_edge_proc     |edge_proc           |   512|
+|13    |    I_fb_orig       |frame_buffer        |    62|
+|14    |    I_fb_proc       |frame_buffer_0      |   112|
+|15    |    I_ov_display    |vga_display         |    39|
+|16    |    I_vga           |vga_sync            |    83|
+|17    |    btn_deb1        |debounce_1pulse     |    90|
+|18    |    btn_deb2        |debounce_1pulse_1   |    90|
+|19    |    capture         |ov7670_capture      |   209|
+|20    |    controller      |ov7670_top_ctrl     |   270|
+|21    |      I_REGS        |ov7670_ctrl_reg     |   175|
+|22    |      I_SCCB        |sccb_master         |    95|
+|23    |    \g_osc.i_osc    |top_oscop           |   200|
+|24    |      I_CTROL_OSC   |CONTROL_OSCILOS     |    93|
+|25    |      I_DRAW        |DRAW_OSC            |     9|
+|26    |      I_FLANCO      |FLANCO              |     2|
+|27    |      I_LIFO_BRAM   |BRAM                |     8|
+|28    |      I_VGA_SYNC    |vga_sync_2          |    88|
+|29    |    i_7seg          |disp7seg_8dig       |    65|
+|30    |  m_uart_rx         |top_uart_rx         |   240|
+|31    |    i_proc_serie    |proc_serie          |   184|
+|32    |    i_uart_rx       |uart_rx             |    56|
+|33    |  m_uart_tx         |top_uart_tx         |   153|
+|34    |    i_uart_interfaz |uart_interfaz       |    97|
+|35    |    i_uart_tx       |uart_tx_nopar       |    56|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 964.891 ; gain = 311.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 964.891 ; gain = 442.039
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+264 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 980.785 ; gain = 687.129
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.785 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/carlo/UNIVERSIDAD/TFM/MICROSCOPIO/full_micro_7.4/full_micro_7.4.runs/synth_1/top_microscopio.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_microscopio_utilization_synth.rpt -pb top_microscopio_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 00:41:36 2021...

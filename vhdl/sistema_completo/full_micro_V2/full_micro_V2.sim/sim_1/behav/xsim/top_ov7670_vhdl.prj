@@ -1,0 +1,33 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/pkg_fun.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/pkg_ov7670.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/color_proc.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/comparador.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/debounce.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/disp7seg_8dig.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/edge_proc.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/pkg_gral.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/pkg_vga.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/pkg_osc.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/flanco_restart.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/frame_buffer.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/oscop_bram.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/oscop_control.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/oscop_display.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/oscop_top.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/ov7670_capture.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/ov7670_ctrl_reg.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/ov7670_top_ctrl.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/ram_sum.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/sccb_master.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/sumador.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/top_sum.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/uart_interfaz.vhd" \
+"../../../../uart_cam10.srcs/sources_1/new/uart_tx_nopar.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/vga_display.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/vga_sync.vhd" \
+"../../../../uart_cam10.srcs/sources_1/imports/vhd/top_ov7670.vhd" \
+
+# Do not sort compile order
+nosort
