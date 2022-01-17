@@ -21,8 +21,9 @@ from PIL import Image, ImageTk
 from PIL import Image
 import struct
 
+global ser
 
-class microscopio():
+class control_FPGA():
 
     def __init__(self):
         self.version = "V7.6"
@@ -82,7 +83,7 @@ class microscopio():
     def reset(self):
         print("> Interfaz reseteada")
         self.root.destroy()
-        interfaz = microscopio()
+        interfaz = control_FPGA()
         interfaz.createGUI()
 
 
@@ -97,6 +98,7 @@ class microscopio():
 
     # Funcion para enviar las instrucciones a la FPGA por el puerto serie
     def env_serial(self, arg):
+        global ser
         bin_num = arg.to_bytes(8, byteorder='big')
         ser.write(bin_num)
         if arg == 0 or arg == 255:
@@ -661,10 +663,9 @@ class microscopio():
                                           "\n     SISTEMA DE AUTOENFOQUE MEDIANTE FPGA PARA MICROSCOPIO DE BAJO                "
                                           "\n     COSTE Y HARDWARE LIBRE CON POSICIONAMIENTO DE BISAGRAS FLEXIBLES             "
                                           "\n                                                                                  "
-                                          "\n    Realizado por Carlos Sánchez Cortés                                           "
                                           "\n    La interfaz permite el control del sistema de posicionamiento, la obtención   "
                                           "\n    de imágenes y un proceso de enfoque automático desarrollado en FPGA.          "
-                                          "\n                       s                                                           "
+                                          "\n                                                                                  "
                                           "\n    Toda la información del proyecto se encuentra disponible en:                  "
                                           "\n            https://github.com/URJCMakerGroup/Autofocus_Delta_Stage               "
                                           "\n    ")
@@ -730,5 +731,5 @@ if __name__ == "__main__":
     except:
         print(" -- Problema conexión puerto serie --")
 
-    app = microscopio()
+    app = control_FPGA()
     app.createGUI()
