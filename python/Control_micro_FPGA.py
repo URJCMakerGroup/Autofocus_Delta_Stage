@@ -162,7 +162,7 @@ class control_FPGA():
             self.env_serial(0)
             self.env_serial(133)
             self.env_serial(0)
-            self.img = PhotoImage(file=r"C:\Users\carlo\PycharmProjects\pythonProject\serial\img\img_micro22.png")
+            self.img = PhotoImage(file=r"./img/img_micro22.png")
             self.panel = Label(self.root, image=self.img)
             self.panel.grid(row=3, column=3, columnspan=4, rowspan=7, padx=5, pady=5)
 
@@ -540,7 +540,7 @@ class control_FPGA():
 
         # titulo de ventana - icono
         self.root.title('- FPGA - Interfaz de control del microscopio')
-        self.root.iconbitmap('C:\\Users\\carlo\\PycharmProjects\\pythonProject\\serial\\img\\logo.ico')
+        self.root.iconbitmap('./img/logo.ico')
 
         # Define el directorio de trabajo:
         selectdir = Button(self.root, text="Path", font=("Helvetica", 8), command=lambda: self.carpeta_imagenes())
@@ -610,7 +610,7 @@ class control_FPGA():
         self.version.grid(row=12, column=1, sticky=W, pady=2)
 
         # Define la imagen obtenida de la FPGA
-        self.img = PhotoImage(file=r"C:\Users\carlo\PycharmProjects\pythonProject\serial\img\img_micro22.png")
+        self.img = PhotoImage(file=r"./img/img_micro22.png")
         #self.img1 = self.img.subsample(1, 1)
         self.panel = Label(self.root, image=self.img)
         self.panel.grid(row=3, column=3, columnspan=4, rowspan=7, padx=5, pady=5)
@@ -681,7 +681,7 @@ class control_FPGA():
         x.start()
 
     def info_esquema(self):
-        img = cv2.imread(r"C:\Users\carlo\PycharmProjects\pythonProject\serial\img\esquema.png", cv2.IMREAD_COLOR)
+        img = cv2.imread(r"./img/esquema.png", cv2.IMREAD_COLOR)
         cv2.imshow("Esquema control FPGA", img)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
