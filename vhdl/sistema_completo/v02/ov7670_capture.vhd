@@ -215,7 +215,12 @@ begin
                 blue <= data_rg3(3 downto 0);
               end if;
             else -- YUV (gray first byte)
-              gray  <= data_rg3;
+              -- should be here, but something is not working correctly
+              -- and it is getting it in the next cycle
+              -- according to the datasheet,TSLB[3]='0' COM13[0]='0'
+              -- makes Y first
+              --gray  <= data_rg3;
+              null;
             end if;
           else
             if rgbmode = '1' then -- RGB Mode ON
@@ -226,7 +231,9 @@ begin
                 red <= data_rg3(3 downto 0);
               end if;
             else -- YUV 
-              null; -- we dont get U or V
+              -- in theory, should be UV, but it is getting Y
+              gray  <= data_rg3;
+              --null; -- we dont get U or V
             end if;
           end if;
         end if;
