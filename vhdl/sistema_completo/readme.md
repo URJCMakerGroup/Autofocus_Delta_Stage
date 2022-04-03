@@ -1,5 +1,8 @@
 ## v02
 
 This version captures the image correctly using ISE
-rst on: sw15 on
-RGB444 on: sw1 on
+
+- Reset: sw15 on. Recomended to start with a reset, also when changing the camera registers (dont forget to put it off)
+- RGB444: sw1 off
+- YUV: sw1 on
+- Test: sw2 on
